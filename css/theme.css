@@ -4,10 +4,15 @@ header {
 	height: 985px;
 }
 
+.jumbotron {
+	background-color: #000066;
+}
+
 .jumbotron .container {
 	background-color: #000000;
 	color: #FFFFFF;
 
     margin: 300px auto auto auto;
-    padding: 20px 0;
+    padding: 20px;
 }
+
