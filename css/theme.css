@@ -1,0 +1,13 @@
+
+
+header {
+	height: 985px;
+}
+
+.jumbotron .container {
+	background-color: #000000;
+	color: #FFFFFF;
+
+    margin: 300px auto auto auto;
+    padding: 20px 0;
+}
