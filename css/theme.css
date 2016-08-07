@@ -1,4 +1,5 @@
-/*Jumbotron*/
+
+
 header {
 	height: 985px;
 }
@@ -17,7 +18,6 @@ header {
    	transform: translate(-50%, -50%);
 }
 
-/*Navigation Bar*/
 .navbar {
 	background-color: #000000;
 	opacity: .7;
@@ -42,20 +42,3 @@ header {
 .navbar-nav li.active a {
 	background-color: #000000;
 }
-
-/*About*/
-.img-circle {
-	width: 300px;
-	height: auto;
-}
-
-#about p {
-	font-size: 30px;
-	margin: 60px;
-}
-
-#about h1 {
-	font-size: 50px;
-	letter-spacing: 2px;
-}
-
