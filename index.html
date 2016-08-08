@@ -30,20 +30,20 @@ My first adventures into the world of web dev.
 		<title>John Tran</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!--CSS-->
-		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-		<link rel="stylesheet" href="css/theme.css">
+		<!-- CSS -->
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="myCSS/theme.css">
 
-		<!--JQuery and JS-->
+		<!-- JQuery and JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	
 	</head>
 	
 	<body>
 
-		<!--Navigation Bar-->
+		<!-- Navigation Bar -->
 		<nav class="navbar navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -59,6 +59,7 @@ My first adventures into the world of web dev.
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#home">Home</a></li>
         				<li><a href="#about">About</a></li>
+        				<li><a href="#projects">Projects</a></li>
        					<li><a href="#resume">Resume</a></li>
         				<li><a href="#contact">Contact</a></li>
        				</ul>
@@ -66,7 +67,7 @@ My first adventures into the world of web dev.
        		</div>
        	</nav>
 
-		<!--Header-->
+		<!-- Header -->
 		<header id="home" class="jumbotron">
 			<div class="container">
 				<div class="text-center">
@@ -76,7 +77,7 @@ My first adventures into the world of web dev.
 			</div>
 		</header>
 
-		<!--About-->
+		<!-- About -->
 		<div id="about" class="container">
 			<div class="text-center">
 				<img src="images/john.jpg" class="img-circle" alt="John's face">
@@ -90,7 +91,49 @@ My first adventures into the world of web dev.
 			</div>
 		</div>
 
+		<!-- Carousel for Projects -->
+		<div id="projects" class="carousel slide" data-ride="carousel">
+			
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#projects" data-slide-to="0" class="active"></li>
+			    <li data-target="#projects" data-slide-to="1"></li>
 
+ 		 	</ol>	
+ 		
+ 			<!-- Wrapper for slides -->
+	 		<div class="carousel-inner" role="listbox">
+	 			
+	 			<div class="item active">
+	 				<img src="images/john.jpg" alt="Kindle the Flames">
+	 				<div class="carousel-caption">
+	 					<h1>Kindle the Flames</h1>
+	 					<p>Click for more information</p>
+	 				</div>
+	 			</div>
+
+	 			<div class="item">
+	 				<img src="images/john.jpg" alt="Excel Form App">
+	 				<div class="carousel-caption">
+	 					<h1>Project</h1>
+	 					<p>Click me!</p>
+	 				</div>
+	 			</div>
+				
+	 			<a class="left carousel-control" href="#projects" role="button" data-slide="prev">
+	 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	 				<span class="sr-only">Previous</span>
+	 			</a>
+  				
+  				<a class="right carousel-control" href="#projects" role="button" data-slide="next">
+    				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+  				</a>
+	 		</div>
+
+
+
+	 	</div>
 
 	</body>
 
