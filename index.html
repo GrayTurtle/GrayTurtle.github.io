@@ -37,6 +37,8 @@ My first adventures into the world of web dev.
 		<!-- JQuery and JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/typed.js"></script>
 
 	</head>
 	
@@ -67,11 +69,21 @@ My first adventures into the world of web dev.
        	</nav>
 
 		<!-- Header -->
+		<script>
+			$(function(){
+	   			$(".homeText").typed({
+	        		strings: ["<h1>Hi, ^500I'm John</h1>"],
+	       				typeSpeed: 10
+	      			});
+	  			});
+		</script>
+		
 		<header id="home" class="jumbotron">
-			<div class="container">
-				<div class="text-center">
-					<h1>Salutations, el mundo!</h1>
-					<p>Welcome to John's website. It is currently under construction. :)</p>
+			<div class="homeText">
+				<div class="container">
+					<div class="text-center">
+
+					</div>
 				</div>
 			</div>
 		</header>
