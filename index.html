@@ -45,7 +45,7 @@ My first adventures into the world of web dev.
 	<body>
 
 		<!-- Navigation Bar -->
-		<nav class="navbar navbar-fixed-top">
+		<nav class="navbar navbar-fixed-top hidden">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -72,8 +72,16 @@ My first adventures into the world of web dev.
 		<script>
 			$(function(){
 	   			$(".homeText").typed({
-	        		strings: ["<h1>Hi, ^500I'm John</h1><br><p>^500This website is under construction. :)</p>"],
-	       				typeSpeed: 10
+	        		strings: ["<h1>Hi, ^500I'm <strong>John</strong></h1><br><p>^500This website is under construction. :)</p>"],
+	       				typeSpeed: 5,
+	       				callback:function() {
+	       					setTimeout(function() {
+	       						$('.navbar').removeClass('hidden');
+	       						$('#about').removeClass('hidden');
+	       						$('#projects').removeClass('hidden');
+	       						$('#contact').removeClass('hidden');
+	       					}, 800);
+	       				}
 	      			});
 	  			});
 		</script>
@@ -82,14 +90,14 @@ My first adventures into the world of web dev.
 			<div class="homeText">
 				<div class="container">
 					<div class="text-center">
-
+						<!--typed.js goes here-->
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<!-- About -->
-		<div class="container" id="about">
+		<div class="container hidden" id="about">
 			<div class="text-center">
 				<img src="images/john.jpg" class="img-circle" alt="John's face">
 				<h1>John Tran</h1>
@@ -103,7 +111,7 @@ My first adventures into the world of web dev.
 		</div>
 
 		<!-- Carousel for Projects -->
-		<div class="container" id="projects">
+		<div class="container hidden" id="projects">
 			<h1>Projects</h1>
 			<div class="col-md-12">
 				<div class="well">
@@ -156,7 +164,7 @@ My first adventures into the world of web dev.
 		</div>
 
 		<!--Contact-->
-		<div id="contact" class="container text-center">
+		<div id="contact" class="container text-center hidden">
 			<h1>CONTACT</h1>
 			    <p id="mySpliel">Chat with me! :)</p>
 				<p><span id="myLocation"</span>Stillwater, US</p>
