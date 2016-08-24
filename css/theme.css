@@ -22,6 +22,7 @@ header {
 .navbar {
 	background-color: #000000;
 	opacity: .7;
+	display: none;
 }
 
 .navbar-brand {
@@ -51,6 +52,7 @@ header {
 
 #about {
 	padding: 140px;
+	display: none;
 }
 
 #about h1 {
@@ -65,11 +67,15 @@ header {
 }
 
 /*Projects*/
+#projects {
+	display: none;
+}
 
 
 /*Contact*/
 #contact {
 	background-color: #000066;
+	display: none;
 }
 
 #contact h1, #contact p{
