@@ -86,8 +86,9 @@ header {
 	margin: 20px;
 }
 
-.element, .animatedWords{
+.element, .animatedWords, .placeholder{
 	display: inline-block;
+	white-space: pre;
 }
 
 .typed-cursor{

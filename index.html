@@ -78,10 +78,14 @@ My first adventures into the world of web dev.
 
 	       					$(".typed-cursor").fadeOut(0);
 
+	       					$(".placeholder").typed({
+	       						strings: ["<h2>|</h2>"],
+	       					});
+
+	       					$(".typed-cursor").fadeOut(0);
+
 	       					$(".animatedWords").typed({
-	       						strings: ["<h2>Developer</h2>",
-	       								  "<h2>Engineer</h2>",
-	       								  "<h2>h@ck3r</h2>"],
+	       						strings: ["<h2>Developer | Engineer | h@ck3r |</h2>"],
 	       						typeSpeed: 10,
 	       						backSpeed: 10,
 	       						loop: true
@@ -100,11 +104,13 @@ My first adventures into the world of web dev.
 		
 		<header id="home" class="jumbotron">
 			<div class="homeText">
-				<div class="container">
-					<div class="text-center">
+				<div class="container text-center">
 						<span class="element"></span>
+				</div>
+				
+				<div class="container text-center">
+						<span class="placeholder"></span>
 						<span class="animatedWords"></span>
-					</div>
 				</div>
 			</div>
 		</header>
