@@ -72,30 +72,30 @@ My first adventures into the world of web dev.
 		<script>
 			$(function(){
 	   			$(".element").typed({
-	        		strings: ["<h1>Hi, ^500I'm <strong>John</strong></h1>"],
-	       				typeSpeed: 5,
+	        		strings: ["<h1>Hi^1000, I'm <strong>John^1000</strong></h1>"],
+	       				typeSpeed: 30,
 	       				callback:function() {
 
 	       					$(".typed-cursor").fadeOut(0);
 
+	       					setTimeout(function() {
+	       						$('.navbar').fadeIn(2000);
+	       						$('#about').fadeIn(2000);
+	       						$('#projects').fadeIn(2000);
+	       						$('#contact').fadeIn(2000);
+	       					});
+
 	       					$(".placeholder").typed({
-	       						strings: ["<h2>|</h2>"],
+	       						strings: ["<h2> </h2>"],
 	       					});
 
 	       					$(".typed-cursor").fadeOut(0);
 
 	       					$(".animatedWords").typed({
-	       						strings: ["<h2>Developer | Engineer | h@ck3r |</h2>"],
+	       						strings: ["<h2>^2000Developer | Engineer | h@ck3r^2000</h2>"],
 	       						typeSpeed: 10,
 	       						backSpeed: 10,
 	       						loop: true
-	       					});
-
-	       					setTimeout(function() {
-	       						$('.navbar').fadeIn(1500);
-	       						$('#about').fadeIn(1500);
-	       						$('#projects').fadeIn(1500);
-	       						$('#contact').fadeIn(1500);
 	       					});
 	       				}
 	      			});
