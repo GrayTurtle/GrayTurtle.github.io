@@ -44,48 +44,6 @@ header {
 	background-color: #000000;
 }
 
-/*About*/
-.img-circle {
-	width: 350px;
-	height: auto;
-}
-
-#about {
-	padding: 140px;
-	display: none;
-}
-
-#about h1 {
-	font-size: 55px;
-	letter-spacing: 2px;
-	margin: 20px;
-}
-
-#about p {
-	font-size: 25px;
-	margin: 30px;
-}
-
-/*Projects*/
-#projects {
-	display: none;
-}
-
-
-/*Contact*/
-#contact {
-	background-color: #000066;
-	display: none;
-}
-
-#contact h1, #contact p{
-	color: #FFFFFF;
-}
-
-#myLocation, #myEmail, #myNumber, #mySpliel {
-	margin: 20px;
-}
-
 .element, .animatedWords, .placeholder{
 	display: inline-block;
 	white-space: pre;
