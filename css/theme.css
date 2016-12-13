@@ -11,14 +11,21 @@
 
 /*particles-js*/
 #particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	background: -webkit-linear-gradient(left top, #000000, #060084); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #000000, #060084); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #000000, #060084); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #000000, #060084); /* Standard syntax */
 }
+
+
 
 /*Navigation Bar*/
 .navbar {
