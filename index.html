@@ -55,7 +55,7 @@ My first adventures into the world of web dev.
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="http://johntran.me">This website is under construction (last update: 12/12/16)</a>
+					<a class="navbar-brand" href="http://johntran.me">This website is under construction (last update: 12/13/16)</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="navigation">
@@ -68,7 +68,7 @@ My first adventures into the world of web dev.
 		<script>
 			$(function(){
 	   			$(".element").typed({
-	        		strings: ["<h1>Hi^1000, I'm <strong>John^1000</strong></h1>"],
+	        		strings: ["<h1>Hi^1000, I'm <strong>John Tran^1000</strong></h1>"],
 	       				typeSpeed: 30,
 	       				callback:function() {
 
@@ -81,32 +81,27 @@ My first adventures into the world of web dev.
 	       						$('#contact').fadeIn(2000);
 	       					});
 
-	       					$(".placeholder").typed({
-	       						strings: ["<h2> </h2>"],
-	       					});
-
 	       					$(".typed-cursor").fadeOut(0);
 
 	       					$(".animatedWords").typed({
 	       						strings: ["<h2>^1500Developer | Engineer | h@ck3r^2000</h2>"],
 	       						typeSpeed: 10,
 	       						backSpeed: 10,
-	       						loop: true
+	       						loop: false
 	       					});
 	       				}
 	      			});
 	  			});
 		</script>
 
-		<header id="home" class="jumbotron">
+		<header id="home" class="home">
 			<div class="homeText">
-				<div class="container text-center">
-						<span class="element"></span>
+				<div class="container">
+					<span class="element"></span>
 				</div>
 
-				<div class="container text-center">
-						<span class="placeholder"></span>
-						<span class="animatedWords"></span>
+				<div class="container">
+					<span class="animatedWords"></span>
 				</div>
 			</div>
 		</header>

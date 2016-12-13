@@ -1,22 +1,14 @@
 
-/*Jumbotron*/
-header {
-	height: 985px;
-}
-
-.jumbotron {
-	background-color: #000066;
-}
-
-.jumbotron .homeText {
-	background-color: #000000;
+/*home*/
+.home .homeText {
 	color: #FFFFFF;
 
   	position: absolute;
- 	top: 50%;
-  	left: 50%;
-   	transform: translate(-50%, -50%);
+ 	top: 40%;
+	left: 5%;
+
 }
+
 /*particles-js*/
 #particles-js{
   width: 100%;
