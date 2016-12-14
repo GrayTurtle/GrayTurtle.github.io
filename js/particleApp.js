@@ -81,7 +81,7 @@ particlesJS('particles-js',
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "bubble"
         },
         "resize": true
       },
@@ -94,9 +94,9 @@ particlesJS('particles-js',
         },
         "bubble": {
           "distance": 400,
-          "size": 40,
+          "size": 7,
           "duration": 2,
-          "opacity": 8,
+          "opacity": .2,
           "speed": 3
         },
         "repulse": {
