@@ -31,7 +31,7 @@
   $.typeIt = function(el, opt) {
     this.d = {
       strings: [],
-      speed: 40,
+      speed: 27,
       deleteSpeed: undefined,
       lifeLike: true,
       cursor: true,
