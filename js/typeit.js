@@ -31,18 +31,18 @@
   $.typeIt = function(el, opt) {
     this.d = {
       strings: [],
-      speed: 27,
+      speed: 60,
       deleteSpeed: undefined,
       lifeLike: true,
       cursor: true,
       cursorSpeed: 1000,
-      breakLines: true,
+      breakLines: false,
       breakDelay: 750,
-      deleteDelay: 750,
+      deleteDelay: 5000,
       startDelay: 250,
       startDelete: false,
       loop: false,
-      loopDelay: 750,
+      loopDelay: 5000,
       html: true,
       autoStart: true,
       callback: function() {}

@@ -27,14 +27,16 @@ My first adventures into the world of web dev.
     <!--Favicon-->
     <link rel="shortcut icon" href="assets/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon.ico">
+    <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/theme.css">
-    
+    <!--JS-->
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    
+    <script src="js/typeit.js"></script>
 
 </head>
 <body>
+    
     
     <div id="particles-js"></div>
         <div id="main">
@@ -44,9 +46,9 @@ My first adventures into the world of web dev.
                     John Tran
                 </div>
                 <div id="body">
-                    <div class="subtitle">
+                    <div style="font-size: 1.3em" class="subtitle">
                         <p>
-                            Hi! I'm a Junior Computer Science major at OU.
+                            <span class="type-it"></span>
                         </p>
                     </div>
                     <div class="about">
@@ -62,6 +64,16 @@ My first adventures into the world of web dev.
                 </div>
             </div>
         </div>
+    
+		<script>
+			var line1 = "Hi!";
+            var line2 = "I'm a Junior Computer Science student at OU."
+            var line3 = "I'm the founder & a director of <a href='https://hacklahoma.org'>Hacklahoma</a>."
+			$('.type-it').typeIt({
+				strings: [line1, line2, line3],
+                loop: true
+			});
+		</script>
         <script src="js/particles.js"></script>
     <script src="js/particleApp.js"></script>
 </body>
