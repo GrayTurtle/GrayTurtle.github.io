@@ -19,48 +19,50 @@ My first adventures into the world of web dev.
 
 	    A website by John Tran (GrayTurtle)
 =============================================-->
+<head>
+    <title>John Tran</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round|Karla' rel='stylesheet' type='text/css'>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    
 
-<!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<title>John Tran</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="images/favicon.png" type="image/png"/ >
+</head>
+<body>
+    
+    <div id="particles-js"></div>
+        <div id="main">
+            
+            <div class="content">
+                <div id="title">
+                    John Tran
+                </div>
+                <div id="body">
+                    <div class="subtitle">
+                        <p>
+                            Hi! I'm a Junior Computer Science major at OU.
+                        </p>
+                    </div>
+                    <div class="about">
+                        <p>
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                        </p>
+                    </div>
+                    <div class="contact">
+                        <p><a href="mailto:john.tran@ou.edu">john.tran@ou.edu</a>.</p>
+                        <p><a href='resume/JohnTranResume.pdf'>Resume</a></p>
+                        <p><a href='https://github.com/GrayTurtle'>GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/particles.js"></script>
+    <script src="js/particleApp.js"></script>
+</body>
 
-		<!-- CSS -->
-		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-		<link rel="stylesheet" href="css/theme.css">
-
-		<!-- JQuery and JS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-		<script src="js/jquery-3.1.0.min.js"></script>
-		<script src="js/typeit.js"></script>
-    		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-	</head>
-
-	<body>
-		<div id="particles-js"></div>
-		<script src="js/particles.js"></script>
-		<script src="js/particleApp.js"></script>
-
-		<!-- Header -->
-		<header id="home" class="home">
-			<div class="homeText">
-				<div class="container">
-					<span class="type-it"></span>
-				</div>
-			</div>
-		</header>
-
-		<script>
-			var firstLine = "Hi, I'm <strong>John Tran</strong>";
-			var secondLine = "Developer | Engineer | h@ck3r";
-			var thirdLine = "<a href='about.html'>About</a> | <a href='resume/JohnTranResume.pdf'>Resume</a> | <a href='https://github.com/GrayTurtle'>GitHub</a> | <a href='mailto:John.Tran@ou.edu'>Contact</a>";
-			$('.type-it').typeIt({
-				strings: [firstLine, secondLine, thirdLine]
-			});
-		</script>
-	</body>
-</html>

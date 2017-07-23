@@ -1,47 +1,68 @@
-html,body{
-	width:100%;
-	height:100%;
-	line-height: 0;
-}
-.h1 {
-	width: 65%;
-}
-
-.panel {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	color: #000000;
-	width: 50%;
-	height: 80%;
-	background-color: #FFFFFF;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', 'Helvetic Neue', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #000000;
 }
 
-/*home*/
-.home .homeText {
-	color: #FFFFFF;
-  	position: absolute;
- 	top: 35%;
-	left: 5%;
-	font-size: 250%;
-	line-height: 1;
+#main{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: relative;
 }
 
-/*background*/
+.content{
+    margin:auto;
+    position: relative;
+    top: 15%;
+    text-align: center;
+    padding: 24px;
+}
+
+#title{
+    color: #912929;
+    font-family: 'Crete Round', serif;
+    font-size: 4em;
+}
+
+#body{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 #particles-js{
 	width: 100%;
 	height: 100%;
 	background-color: #000000;
-	background-image: url('');
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+    position: absolute;
+}
 
-	background: -webkit-linear-gradient(left top, #212237 25%, #6F2148); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(bottom right, #212237 25%, #6F2148); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(bottom right, #212237 25%, #6F2148); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to bottom right, #212237 25%, #6F2148); /* Standard syntax */
+.content {
+    max-width: 600px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #912929;
+    -webkit-transition: color 0.5s;
+}
+
+a:hover {
+    color: #912929;
+}
+
+
+
+@media only screen and (max-width : 820px) {
+  .content {
+    top: 12%;
+  }
 }
