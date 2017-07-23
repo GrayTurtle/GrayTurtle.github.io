@@ -27,14 +27,16 @@ My first adventures into the world of web dev.
     <!--Favicon-->
     <link rel="shortcut icon" href="assets/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon.ico">
+    <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/theme.css">
-    
+    <!--JS-->
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    
+    <script src="js/typeit.js"></script>
 
 </head>
 <body>
+    
     
     <div id="particles-js"></div>
         <div id="main">
@@ -44,9 +46,9 @@ My first adventures into the world of web dev.
                     John Tran
                 </div>
                 <div id="body">
-                    <div class="subtitle">
+                    <div style="font-size: 1.3em" class="subtitle">
                         <p>
-                            Hi! I'm a Junior Computer Science major at OU.
+                            <span class="type-it"></span>
                         </p>
                     </div>
                     <div class="about">
@@ -56,12 +58,27 @@ My first adventures into the world of web dev.
                     </div>
                     <div class="contact">
                         <p><a href="mailto:john.tran@ou.edu">john.tran@ou.edu</a>.</p>
-                        <p><a href='resume/OU_John_Tran_Resume_Website.pdf'>Resume</a></p>
-                        <p><a href='https://github.com/GrayTurtle'>GitHub</a></p>
+                        <p><a target='_blank' href='resume/OU_John_Tran_Resume_Website.pdf'>Resume</a></p>
+                        <p><a target='_blank' href='https://github.com/GrayTurtle'>GitHub</a></p>
                     </div>
                 </div>
             </div>
         </div>
+    
+		<script>
+			var line1 = "Hi!";
+            var line2 = "I'm a Junior Computer Science student at OU."
+            var line3 = "I'm the founder & a director of <a target='_blank' href='https://hacklahoma.org'>Hacklahoma</a>."
+            var line4 = "I'm the president of the OU Student Chapter ACM."
+            var line5 = "I'm an avid <a target='_blank' href='https://mlh.io/faq#what-is-a-hackathon'>hackathon</a> go-er/hacker."
+            var line6 = "I like to make <a target='_blank' href='https://github.com/GrayTurtle'>projects</a> and learn in my freetime."
+            var line7 = "I ask <u>a lot</u> of questions."
+            var line8 = "I like <a target='_blank' href='https://soundcloud.com/a-gray-turtle'>turtles</a>."
+			$('.type-it').typeIt({
+				strings: [line1, line2, line3, line4, line5, line6, line7, line8],
+                loop: true
+			});
+		</script>
         <script src="js/particles.js"></script>
     <script src="js/particleApp.js"></script>
 </body>
