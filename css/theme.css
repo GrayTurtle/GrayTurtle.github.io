@@ -42,6 +42,15 @@ body {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
     position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+
+.type-it {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
 }
 
 .content {
