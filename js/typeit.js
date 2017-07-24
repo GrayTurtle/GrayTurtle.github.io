@@ -38,7 +38,7 @@
       cursorSpeed: 1000,
       breakLines: false,
       breakDelay: 750,
-      deleteDelay: 5000,
+      deleteDelay: 10000,
       startDelay: 250,
       startDelete: false,
       loop: false,
