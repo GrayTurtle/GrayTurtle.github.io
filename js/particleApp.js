@@ -42,8 +42,8 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 3,
-        "random": true,
+        "value": 2,
+        "random": false,
         "anim": {
           "enable": false,
           "speed": 9,
@@ -60,15 +60,15 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": .235,
+        "speed": .1,
         "direction": "none",
         "random": true,
         "straight": false,
         "out_mode": "out",
         "attract": {
           "enable": true,
-          "rotateX": 600,
-          "rotateY": 1200
+          "rotateX": 1000,
+          "rotateY": 1500
         }
       }
     },
